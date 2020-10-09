@@ -11,9 +11,10 @@ header {
 header .row {
     width: 100%;
     margin: 0 auto;
-    position: fixed;
+    /* position: fixed; */
     padding: 20px 40px;
     box-sizing: border-box;
+    background-color: #fff;
 }
 header .row .row-small {
     width: 20%;
@@ -21,7 +22,7 @@ header .row .row-small {
     display: flex;
 }
 header .row .row-small2 {
-    width: 50%;
+    width: 51%;
     float: right;
     display: flex;
 }
@@ -91,14 +92,46 @@ header .row .row-small2 button:hover {
 
 /* here we go with nav */
 
-header nav {
-    width: 100%;
-    height: 100%;
-    background-image: url(../image/bg-img.jpg);
-    
+
+
+article .menu-container{
+     overflow: visible;
+     position: relative;
 
 }
 
+article .small-container {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+}
+article .small-container .logo{
+    width: 20%;
+    float: left;
+    display: flex;
+}
+article .small-container .logo-img .radius{
+    width: 40px;
+    height: 5px;
+    background-color: black;
+}
+article .small-container .logo-text {
+    margin: 3px 0 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+article .small-container .navbar-menu {
+    width: 50%;
+    float: right;
+    list-style-type: none;
+    margin-left: 100px;
+}
+article .small-container .navbar-menu .nav-items {
+    padding: 10px 0px;
+    box-sizing: border-box;
+    display: inline-block;
 
-
-
+}
