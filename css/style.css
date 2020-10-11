@@ -28,15 +28,15 @@ header .row .row-small2 {
     display: flex;
 }
 
-@media (max-width: 767) {
-    .row-small, .row-small2 {
+@media (max-width: 767px) {
+    header .row .row-small, .row-small2 {
         width: 100%;
         display: block;
     }
 }
-@media (min-width: 768) and (max-width: 1023) {
+@media (min-width: 768px) and (max-width: 1023px) {
     .row-small, .row-small2 {
-        width: 100%;
+        width: 50%;
     }
 }
 
@@ -140,6 +140,11 @@ article .small-container .navbar-menu .nav-items {
     box-sizing: border-box;
     display: inline-block;
     padding: 10px 28px;
+}
+@media (max-width: 1024px) {
+    article .small-container .navbar-menu .nav-items {
+        display: block;
+    }
 }
 article .small-container .navbar-menu .nav-items .nav-links {
     font: normal normal normal 14px/1.4em avenir-lt-w01_85-heavy1475544,sans-serif;
@@ -301,6 +306,17 @@ main .container h2 {
     padding: 60px 0 30px 60px;
     letter-spacing: 0.35em;
     font: normal normal normal 40px/1.4em avenir-lt-w01_85-heavy1475544,sans-serif;
+    animation: header 2s linear;
+}
+@keyframes header {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
 }
 main .container .text-part {
     width: 50%;
@@ -314,6 +330,7 @@ main .container .text-part {
     position: absolute;
     line-height: 1.8;
 }
+
 main .image-part {
     width: 100%;
     height: 100%;
